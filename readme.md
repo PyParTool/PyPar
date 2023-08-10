@@ -1,6 +1,6 @@
 # PyPar
 
-PyPar is a tool for automatically discovering parallelization possibilities in Python programs. It leverages data dependence analysis and graph-theoretic methods to find parallelisms, and uses dynamic analysis to select useful parallelisms.
+PyPar is a tool for automatically discovering parallelization possibilities in Python programs. It leverages data dependence analysis and graph-theoretic methods to find parallelisms and uses dynamic analysis to select useful parallelisms.
 
 ## Published Work
 
@@ -101,7 +101,7 @@ expected parallel time:  0.4581724658450882
 
 `('/path_to_skimage_package/skimage/filters/ridges.py', 'ridges', 'frangi')` gives the parallelizable function.
 
-`Loop` indicates the parallelism is within a loop.
+`Loop` indicates that parallelism is within a loop.
 
 `Code: ...` gives the code piece that has parallelization possibilities.
 
@@ -131,7 +131,7 @@ To reproduce the experiment results in the published work, one should use a set 
 + discover parallelisms and rewrite
 + measure acceleration
 
-We provide these scripts in directory `reproducing_pipeline/`. It is immediately executable for package `Seaborn`. One can change the package directory in these scripts to reproduce results on other packages.
+We provide these scripts in the directory `reproducing_pipeline/`. It is immediately executable for package `Seaborn`. One can change the package directory in these scripts to reproduce results on other packages.
 
 See `reproducing_pipeline/readme.md` for more information.
 

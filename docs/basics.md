@@ -1,6 +1,6 @@
 # basics
 
-The directory `pypar/basics/` provides building blocks of the PyPar tool.
+The directory `pypar/basics/` provides the building blocks of the PyPar tool.
 
 The code used below is in `basics_example.py`.
 
