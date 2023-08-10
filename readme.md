@@ -124,6 +124,14 @@ For more information, see `docs/`
 
 ## Reproducing
 
-The `seaborn_pipeline/`directory contains code for reproducing the experiment results on package `seaborn` in the published work. See `seaborn_pipeline/readme.md` for more information.
+To reproduce the experiment results in the published work, one should use a set of scripts to:
 
-The code for reproducing the experiment results on other packages is essentially the same.
++ collect function calls from `pytest` scripts and example programs of the target package
++ generate input of suitable size for these functions
++ discover parallelisms and rewrite
++ measure acceleration
+
+We provide these scripts in directory `reproducing_pipeline/`. It is immediately executable for package `Seaborn`. One can change the package directory in these scripts to reproduce results on other packages.
+
+See `reproducing_pipeline/readme.md` for more information.
+

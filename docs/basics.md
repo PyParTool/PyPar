@@ -2,6 +2,8 @@
 
 The directory `pypar/basics/` provides building blocks of the PyPar tool.
 
+The code used below is in `basics_example.py`.
+
 ## Decompose
 
 `class ExprExtractor` in `pypar/basics/ExprExtractor.py` decompose a statement into fine-grained program units. It takes the AST (abstract syntax tree) of a statement as input, and outputs program units and dependence relations from decomposition.

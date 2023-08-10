@@ -4,8 +4,7 @@ from pytest import console_main
 from pypar.utils.FuncCallTracer import FuncTracer
 
 def handle_mod(cur_dir):
-    # path to your seaborn package
-    seaborn_dir = '~/.local/lib/python3.8/site-packages/seaborn'
+    seaborn_dir = '/path_to_seaborn_package'
     os.chdir(seaborn_dir)
     #console_main()
     tracer = FuncTracer(

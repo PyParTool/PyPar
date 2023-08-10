@@ -4,7 +4,7 @@ import os
 trace_code  = '''
 from pypar.utils.FuncCallTracer import FuncTracer
 import sys
-seaborn_dir = \'~/.local/lib/python3.8/site-packages/seaborn\'
+seaborn_dir = \'/path_to_seaborn_package\'
 tracer = FuncTracer(
     errorFile=open(\'/tmp/seaborn.%d.\' + __file__.split(\'/\')[-1] + \'.txt\', \'w\'), 
     interestingFilePrefixs=[seaborn_dir])
@@ -29,7 +29,7 @@ def run_examples():
     files = []
     # path to seaborn example programs
     # for the example programs, see https://github.com/mwaskom/seaborn/tree/master/examples
-    examples_dir = '/path_to_seaborn_example_programs'
+    examples_dir = '/path_to_example_programs'
     for fname in os.listdir(examples_dir):
         if fname.endswith('.py'):
                 fpath = examples_dir + '/' + fname
